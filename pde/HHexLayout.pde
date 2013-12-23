@@ -35,17 +35,17 @@ public static class HHexLayout implements HLayout {
 	}
 
 	public HHexLayout offsetX(float value) {
-		_adjustX = value;
+		_offsetX = value;
 		return this;
 	}
 
 	public HHexLayout offsetY(float value) {
-		_adjustY = value;
+		_offsetY = value;
 		return this;
 	}
 
-	public float offsetX() { return _adjustX; }
-	public float offsetY() { return _adjustY; }
+	public float offsetX() { return _offsetX; }
+	public float offsetY() { return _offsetY; }
 
 	protected PVector north(PVector in) {
 		return north(in, 1);
