@@ -47,32 +47,32 @@ public static class HHexLayout implements HLayout {
 	public float offsetX() { return _offsetX; }
 	public float offsetY() { return _offsetY; }
 
-	protected PVector north(PVector in) {
-		return north(in, 1);
+	protected PVector north(PVector input) {
+		return north(input, 1);
 	}
 
-	protected PVector north(PVector in, int distance) {
-		return new PVector(in.x, in.y-distance);
+	protected PVector north(PVector input, int distance) {
+		return new PVector(input.x, input.y-distance);
 	}
 
-	protected PVector south(PVector in) {
-		return new PVector(in.x, in.y+1);
+	protected PVector south(PVector input) {
+		return new PVector(input.x, input.y+1);
 	}
 
-	protected PVector northeast(PVector in) {
-		return new PVector(in.x+1, in.y-1);
+	protected PVector northeast(PVector input) {
+		return new PVector(input.x+1, input.y-1);
 	}
 
-	protected PVector northwest(PVector in) {
-		return new PVector(in.x-1, in.y);
+	protected PVector northwest(PVector input) {
+		return new PVector(input.x-1, input.y);
 	}
 
-	protected PVector southeast(PVector in) {
-		return new PVector(in.x+1, in.y);
+	protected PVector southeast(PVector input) {
+		return new PVector(input.x+1, input.y);
 	}
 
-	protected PVector southwest(PVector in) {
-		return new PVector(in.x-1, in.y+1);
+	protected PVector southwest(PVector input) {
+		return new PVector(input.x-1, input.y+1);
 	}
 
 	protected void updateLastPoint() {
